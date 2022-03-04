@@ -51,7 +51,18 @@ TraversyP9.js
 - Contructors with
 - Prototypes
 
-TraversyP9.js
+TraversyP10.js
 - Object oriented programming in ES6+
 - Constructors in
 - Classes
+
+TraversyP11.js
+- DOM (Document Object Model)
+- Element Selectors
+
+TraversyP12.js
+- Manipulate the DOM
+- Change the style
+
+TraversyP13.js
+- Events
