@@ -4,36 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Traversy JS Crash Course 2019</title>
+    <title>JS Academy - Drawing app</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header>
-      <h1>JS Crash Course</h1>
-    </header>
-
     <section class="container">
-      <form id="my-form">
-        <h1>Add User</h1>
-        <div class="msg"></div>
-        <div>
-          <label for="name">Name:</label>
-          <input type="text" id="name" />
-        </div>
-        <div>
-          <label for="email">Email:</label>
-          <input type="text" id="email" />
-        </div>
-        <input class="btn" type="submit" value="Submit" />
-      </form>
+      <div id="toolbar">
+        <h1>Draw.</h1>
 
-      <ul id="users"></ul>
+        <label for="stroke">Stroke</label>
+        <input id="stroke" name="stroke" type="color" />
 
-      <!-- <ul class="items">
-        <li class="item">Item 1</li>
-        <li class="item">Item 2</li>
-        <li class="item">Item 3</li>
-      </ul> -->
+        <label for="lineWidth">Line Width</label>
+        <input id="lineWidth" name="lineWidth" type="number" value="5" />
+
+        <button id="clear">Clear</button>
+      </div>
+
+      <div class="drawing-board">
+        <canvas id="drawing-board"></canvas>
+      </div>
     </section>
 
     <script src="./main.js"></script>
