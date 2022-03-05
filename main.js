@@ -1,56 +1,42 @@
-const canvas = document.getElementById("drawing-board");
-const toolbar = document.getElementById("toolbar");
-const ctx = canvas.getContext("2d");
+/*
 
-const canvasOffsetX = canvas.offsetLeft;
-const canvasOffsetY = canvas.offsetTop;
+== The Concept ==
 
-canvas.width = window.innerWidth - canvasOffsetX;
-canvas.height = window.innerHeight - canvasOffsetY;
+function processDoll(doll){
 
-let isPainting = false;
-let lineWidth = 5;
-let startX;
-let startY;
-
-toolbar.addEventListener("click", (e) => {
-  if (e.target.id === "clear") {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-  }
-});
-
-toolbar.addEventListener("change", (e) => {
-  if (e.target.id === "stroke") {
-    ctx.strokeStyle = e.target.value;
+  // 1) Base case
+  if (found the piece of chocolate) {
+    return "Yum Yum";
   }
 
-  if (e.target.id === "lineWidth") {
-    lineWidth = e.target.value;
-  }
-});
-
-const draw = (e) => {
-  if (!isPainting) {
-    return;
+  // 2) Recursive call to itself
+  else if (there are no more dolls) {
+    return "No chocolate here :("
   }
 
-  ctx.lineWidth = lineWidth;
-  ctx.lineCap = "round";
+  else {
+    processDoll(the smaller doll)
+  }
+}
 
-  ctx.lineTo(e.clientX - canvasOffsetX, e.clientY);
-  ctx.stroke();
-};
+*/
 
-canvas.addEventListener("mousedown", (e) => {
-  isPainting = true;
-  startX = e.clientX;
-  startY = e.clientY;
-});
+// ============
+// Factorial using Recursion
+// ============
+/*
+  4!
+  = 4 * 3 * 2 * 1
+  = 24
+*/
 
-canvas.addEventListener("mouseup", (e) => {
-  isPainting = false;
-  ctx.stroke();
-  ctx.beginPath();
-});
+function factorial(n) {
+  // Base Case
+  if (n == 1 || n == 0) {
+    return 1;
+  } else {
+    return n * factorial(n - 1);
+  }
+}
 
-canvas.addEventListener("mousemove", draw);
+console.log(factorial(4)); // Output: 24
