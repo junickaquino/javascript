@@ -6,4 +6,8 @@ devsage.js
 
 davegray.js
 - https://www.youtube.com/watch?v=Q0alTGQ-lXk
-- 
+- 1. Count to ten
+- 2. Fibonacci Sequence
+- 3. Find the nth position in a Fibonacci Sequence
+- 4. IRL Example: Continuation Token from an API
+- 5. IRL Example: A Parser
