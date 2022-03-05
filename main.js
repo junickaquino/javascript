@@ -40,3 +40,10 @@ function factorial(n) {
 }
 
 console.log(factorial(4)); // Output: 24
+/*
+  factorial(4)
+    4 * factorial(3)
+      3 * factorial(2)
+        2 * factorial(1)
+          2 * 1
+*/
