@@ -6,7 +6,7 @@ What is AJAX?
 
 - Lets you load chunks of a webpage rather than loading the entire webpage.
 
-- XMLHttpRequest (XHR) Object
+- XmlHTTPRequest (XHR) Object
     - API in the form of an Object
         - It has properties and methods attached to it.
     - Provided by browsers
@@ -17,3 +17,4 @@ What is AJAX?
     - jQuery
     - Axios
     - Fetch API
+    
