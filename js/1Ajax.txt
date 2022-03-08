@@ -1,0 +1,6 @@
+What is AJAX?
+
+- Asynchronous Javascript and XML
+- Not a langauge, framework nor libraries. It's simpyl a set of web technologies to send and recieve data form a client to a server asynchrounously.
+- XML is rarely used anymore, replaced my JSON. It's easier and faster.
+- 
