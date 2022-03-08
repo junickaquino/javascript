@@ -9,6 +9,8 @@
   </head>
   <body>
     <button id="button">Get Text File</button>
+    <br /><br />
+    <div id="text"></div>
 
     <script>
       // Create event listener
@@ -41,6 +43,11 @@
             */
 
             console.log(this.responseText);
+
+            // Displays the text in DOM.
+            document.getElementById("text").innerHTML = this.responseText;
+          } else if (this.status == 404) {
+            document.getElementById("text").innerHTML = "Not Found...";
           }
         };
 
