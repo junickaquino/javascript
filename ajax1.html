@@ -23,32 +23,49 @@
         // OPEN - type, url/file, async
         xhr.open("GET", "sample.txt", true);
 
-        // xhr.onload = function () {
-        //   if (this.status == 200) {
-        //     // Can say xhr.status instead.
-        //     /* HTTP Statuses
-        //         200: "OK"
-        //         403: "Forbidden"
-        //         404: "Not Found"
-        //     */
+        console.log("READYSTATE: ", xhr.readyState);
 
-        //     console.log(this.responseText);
-        //   }
-        // };
+        // OPTIONAL - used for loaders
+        xhr.onprogress = function () {
+          console.log("READYSTATE onProgress: ", xhr.readyState);
+        };
 
-        xhr.onreadystatechange = function () {
-          if (this.readyState == 4 && this.status == 200) {
-            /* readyState Values
-                0: request not initialized
-                1: server connection established
-                2: request received
-                3: processing request
-                4: request finished and response is ready
+        xhr.onload = function () {
+          if (this.status == 200) {
+            console.log("READYSTATE: ", xhr.readyState);
+            // Can say xhr.status instead.
+            /* HTTP Statuses
+                200: "OK"
+                403: "Forbidden"
+                404: "Not Found"
             */
 
             console.log(this.responseText);
           }
         };
+
+        // Error handling
+        xhr.onerror = function () {
+          console.log("Request error...");
+        };
+
+        // xhr.onreadystatechange = function () {
+        //   console.log("READYSTATE: ", xhr.readyState);
+        //   // Difference between onLoad vs readySTATE:
+        //   //  This will go though statuses 1 to 4. In onLoad. It would skip to 4.
+
+        //   if (this.readyState == 4 && this.status == 200) {
+        //     /* readyState Values
+        //         0: request not initialized
+        //         1: server connection established
+        //         2: request received
+        //         3: processing request
+        //         4: request finished and response is ready
+        //     */
+
+        //     console.log(this.responseText);
+        //   }
+        // };
 
         // Sends Request
         xhr.send();
