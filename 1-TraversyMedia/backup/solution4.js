@@ -2,6 +2,11 @@
 // Mimic Blogpost in a server
 // ===========================
 
+/*
+    Solution: Using async await
+
+*/
+
 const posts = [
   {
     title: "Post One",
@@ -41,23 +46,13 @@ function createPost(post) {
   });
 }
 
-// async function init() {
-//   await createPost({
-//     title: "Post Three",
-//     body: "This is post three",
-//   });
+async function init() {
+  await createPost({
+    title: "Post Three",
+    body: "This is post three",
+  });
 
-//   getPosts();
-// }
-
-// init();
-
-async function fetchUsers() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/users");
-
-  const data = await res.json();
-
-  console.log(data);
+  getPosts();
 }
 
-fetchUsers();
+init();

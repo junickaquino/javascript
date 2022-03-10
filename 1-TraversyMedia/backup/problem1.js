@@ -2,6 +2,13 @@
 // Mimic Blogpost in a server
 // ===========================
 
+/*
+    Problem: Does not display Post Three
+    because the setTimeout for CreatePost takes longer than the getPosts function.
+    By the time CreatePost was executed, the system already displayed the available posts.
+
+*/
+
 const posts = [
   {
     title: "Post One",
@@ -25,20 +32,15 @@ function getPosts() {
   }, 1000);
 }
 
-function createPost(post, callback) {
+function createPost(post) {
   setTimeout(() => {
     posts.push(post);
-    callback();
   }, 2000);
 }
 
-// getPosts();
+getPosts();
 
-createPost(
-  {
-    title: "Post Three",
-    body: "This is post three",
-  },
-
-  getPosts
-);
+createPost({
+  title: "Post Three",
+  body: "This is post three",
+});

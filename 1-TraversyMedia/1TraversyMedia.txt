@@ -6,3 +6,18 @@ https://www.youtube.com/watch?v=PoRJizFvM7s
 
 Asynchronous - When something is going on but you dont want to wait until its done to continue your program. You want to continue while it's happening.
 Synchronous - Something is happening, but you have to wait before you ove on to the next.
+
+Problem:
+    Does not display Post Three
+    because the setTimeout for CreatePost takes longer than the getPosts function.
+    By the time CreatePost was executed, the system already displayed the available posts.
+
+
+Solution 1 - Added callback parameters.
+Solution 2 - Using a promise
+Solution 3 - Using promise all + fetch
+Solution 4 - Using async await
+Solution 5 - Using async await with Fetch
+
+
+

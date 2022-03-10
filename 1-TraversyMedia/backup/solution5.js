@@ -2,6 +2,11 @@
 // Mimic Blogpost in a server
 // ===========================
 
+/*
+    Solution: Using async await with Fetch
+
+*/
+
 const posts = [
   {
     title: "Post One",

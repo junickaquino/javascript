@@ -2,6 +2,12 @@
 // Mimic Blogpost in a server
 // ===========================
 
+/*
+    Solution: Added callback parameters.
+    
+
+*/
+
 const posts = [
   {
     title: "Post One",
@@ -31,8 +37,6 @@ function createPost(post, callback) {
     callback();
   }, 2000);
 }
-
-// getPosts();
 
 createPost(
   {

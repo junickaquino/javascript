@@ -2,6 +2,12 @@
 // Mimic Blogpost in a server
 // ===========================
 
+/*
+    Solution: Using a promise
+    
+
+*/
+
 const posts = [
   {
     title: "Post One",
@@ -30,7 +36,7 @@ function createPost(post) {
     setTimeout(() => {
       posts.push(post);
 
-      const error = false;
+      const error = true;
 
       if (!error) {
         resolve();
@@ -41,23 +47,9 @@ function createPost(post) {
   });
 }
 
-// async function init() {
-//   await createPost({
-//     title: "Post Three",
-//     body: "This is post three",
-//   });
-
-//   getPosts();
-// }
-
-// init();
-
-async function fetchUsers() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/users");
-
-  const data = await res.json();
-
-  console.log(data);
-}
-
-fetchUsers();
+createPost({
+  title: "Post Three",
+  body: "This is post three",
+})
+  .then(getPosts)
+  .catch((err) => console.log(err));
