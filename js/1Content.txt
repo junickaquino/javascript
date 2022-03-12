@@ -1,0 +1,37 @@
+
+
+The JavaScript Survival Guide
+https://www.youtube.com/watch?v=9emXNzqCKyg
+
+1. How to run JavaScript
+    - using nodejs
+        > node main.js
+    - Browser developer console
+    - Through HTML script tag
+
+2. Primitives and Objects
+    - null vs undefined
+
+3. Control Flow
+    - Truthy vs Falsy
+    - Operators
+    - Equality and Comparison
+    - Switch
+    - Try Catch
+
+4. Variables
+    - var, let, const
+    - Hoisting
+
+5. Functions
+    - Piece of code that takes an input and produces an output.
+    - anonymous vs named
+    - higher order functions
+    - closure
+        - a function within a function
+        - similar to class
+    
+6. Objects
+    - data structure that allows to associate key value pairs.
+    - "This" keyword
+    
