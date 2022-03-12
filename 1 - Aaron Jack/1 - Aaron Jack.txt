@@ -1,0 +1,29 @@
+
+LinkedList
+    - Good at adding and deleting new nodes/items
+    - Not good at retrieval or searching
+
+Array
+    - Good at retrieving items
+    - Not good at adding items
+
+Hash Table
+    - or dictionary
+    - Good at retrieving and adding
+    - But collision could be a problem
+
+Stack
+    - Last in first out
+    - Push and pop
+
+Queue
+    - First in First out
+    - Enqueue
+    - dequeue
+
+Graphs
+    - Similar to linkedList, but nodes are called edges.
+
+Tree
+    - parent and children
+    - Binary search tree
