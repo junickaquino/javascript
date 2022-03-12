@@ -1,0 +1,31 @@
+
+https://www.youtube.com/watch?v=y7ksXLhuy-w
+
+1. Arrays
+    - a container object that holds a fixed number of values of a single type.
+    - indexed.
+
+2. LinkedList
+    - liner data structure where each element is a separate object.
+    - nodes.
+
+3. Stacks
+    - Last in first out
+    - push and pop
+
+5. Queue
+    - First In First out
+
+
+https://www.youtube.com/watch?v=2EQ9WswHJ6A
+
+6. Hash Tables
+    - data structure that stores values which have keys assocuated with each of them.
+    - collision may occur when two keys are hashed to the same index in a hash table.
+
+7. Trees
+    - data is organized hierarchically and are linked together.
+    - binary search tree
+
+8. Graph
+    - consists of finite set of vertices or nodes and a set of edges connecting these vertices.
