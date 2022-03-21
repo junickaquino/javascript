@@ -29,3 +29,15 @@ function isPangram(string) {
 
 var string = "The quick brown fox jumps over the lazy dog.";
 console.log(isPangram(string));
+
+/*
+ Other Solutions
+
+ function isPangram(string){
+  string = string.toLowerCase();
+  return "abcdefghijklmnopqrstuvwxyz".split("").every(function(x){
+    return string.indexOf(x) !== -1;
+  });
+}
+
+*/
