@@ -1,0 +1,8 @@
+https://www.youtube.com/watch?v=JgWm6sQwS_I
+
+Knapsack Problem
+
+Algorithm = sequence of steps to solve a clearly defined problem.
+
+Measuring performance (Time complexity - Big O)
+    
