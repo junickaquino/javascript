@@ -1,3 +1,21 @@
+function bubbleSort(array) {
+  let swapped = true;
+
+  do {
+    swapped = false;
+
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] > array[i + 1]) {
+        let temp = array[i];
+        array[i] = array[i + 1];
+        array[i + 1] = temp;
+
+        swapped = true;
+      }
+    }
+  } while (swapped);
+}
+
 function binarySearch(sortedArray, key) {
   let start = 0;
   let end = sortedArray.length - 1;
@@ -21,6 +39,9 @@ function binarySearch(sortedArray, key) {
 }
 
 const arr = [1, 4, 6, 7, 9, 3, 2, 5, 8];
+
+bubbleSort(arr);
+console.log(arr);
 
 console.log(binarySearch(arr, 3));
 
